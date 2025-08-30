@@ -33,6 +33,7 @@ export default function Projects() {
               </CardHeader>
 
               <CardContent>
+                {/* Project Description */}
                 <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
 
                 {/* Tech Stack */}
@@ -51,7 +52,12 @@ export default function Projects() {
                 <div className="flex space-x-3">
                   {project.githubUrl && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
                         <Github className="h-4 w-4 mr-2 text-pink-500" />
                         Code
                       </a>
@@ -59,7 +65,12 @@ export default function Projects() {
                   )}
                   {project.liveUrl && (
                     <Button size="sm" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center"
+                      >
                         <ExternalLink className="h-4 w-4 mr-2 text-blue-500" />
                         Live Demo
                       </a>
