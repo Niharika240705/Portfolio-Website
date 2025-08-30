@@ -20,8 +20,8 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      info: "niharika.singh@example.com",
-      url: "mailto:niharika.singh@example.com",
+      info: "niharika.singh@btech.christuniversity.in",
+      url: "mailto:niharika.singh@btech.christuniversity.in",
       frontBg: "bg-purple-500/20",
       frontIcon: "text-purple-400",
       backBg: "bg-gradient-to-br from-purple-500/20 to-purple-600/20",
@@ -39,7 +39,7 @@ export default function Contact() {
       icon: Linkedin,
       title: "LinkedIn",
       info: "Connect with me",
-      url: "https://www.linkedin.com/in/niharikasingh240705/",
+      url: "https://www.linkedin.com/in/niharika-singh-651930290/",
       frontBg: "bg-blue-500/20",
       frontIcon: "text-blue-400",
       backBg: "bg-gradient-to-br from-blue-500/20 to-blue-600/20",
@@ -118,7 +118,7 @@ export default function Contact() {
               Whether you're looking to collaborate, discuss opportunities, or chat about AI, I'd love to hear from you.
             </p>
             <a
-              href="mailto:niharika.singh@example.com"
+              href="mailto:niharika.singh@btech.christuniversity.in"
               className="group inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-red-500 text-white rounded-lg hover:from-purple-600 hover:to-red-600 transition-all duration-300 font-light hover:scale-105"
             >
               <span>Get In Touch</span>
