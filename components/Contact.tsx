@@ -42,13 +42,13 @@ export default function Contact() {
           />
         </div>
 
-        {/* Contact Cards with Flip Animation */}
+        {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {[
-            { icon: Mail, title: "Email", info: "niharika.singh@example.com", color: "purple" },
-            { icon: Github, title: "GitHub", info: "@yourusername", color: "pink" },
-            { icon: Linkedin, title: "LinkedIn", info: "Connect with me", color: "red" },
-            { icon: Download, title: "Resume", info: "Download CV", color: "orange" },
+            { icon: Mail, title: "Email", info: "niharikasingh240705@gmail.com", color: "purple" },
+            { icon: Github, title: "GitHub", info: "@Niharika240705", color: "pink", url: "https://github.com/Niharika240705" },
+            { icon: Linkedin, title: "LinkedIn", info: "Connect with me", color: "red", url: "https://www.linkedin.com/in/niharikasingh240705/" },
+            { icon: Download, title: "Resume", info: "Download CV", color: "orange", url: "https://drive.google.com/uc?export=download&id=1BXO9PTAKUbukEVGr1ixxlBvZEcsi4g0z" },
           ].map((item, index) => (
             <div
               key={index}
@@ -73,7 +73,18 @@ export default function Contact() {
                   className={`absolute inset-0 backface-hidden rotate-y-180 text-center p-6 bg-gradient-to-br from-${item.color}-500/20 to-${item.color}-600/20 rounded-lg border border-${item.color}-500/30 flex flex-col justify-center`}
                 >
                   <item.icon className={`h-8 w-8 text-${item.color}-400 mx-auto mb-2`} />
-                  <p className="text-white text-sm font-light">{item.info}</p>
+                  {item.url ? (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-sm font-light hover:underline"
+                    >
+                      {item.info}
+                    </a>
+                  ) : (
+                    <p className="text-white text-sm font-light">{item.info}</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -95,7 +106,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:niharika.singh@example.com"
+              href="mailto:niharikasingh240705@gmail.com"
               className="group inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-red-500 text-white rounded-lg hover:from-purple-600 hover:to-red-600 transition-all duration-300 font-light hover:scale-105"
             >
               <span>Get In Touch</span>
@@ -113,15 +124,26 @@ export default function Contact() {
               © 2024 Niharika Singh. Crafted with passion and precision.
             </div>
             <div className="flex items-center space-x-6">
-              {[Github, Linkedin, Mail].map((Icon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-110"
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              ))}
+              <a
+                href="https://github.com/Niharika240705"
+                className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-110"
+                target="_blank"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/niharikasingh240705/"
+                className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-110"
+                target="_blank"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:niharikasingh240705@gmail.com"
+                className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-110"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -129,3 +151,4 @@ export default function Contact() {
     </section>
   )
 }
+import { socialLinksData } from "../data/socialLinks"

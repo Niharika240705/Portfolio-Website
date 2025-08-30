@@ -69,7 +69,7 @@ export default function About() {
               style={{ transitionDelay: "0.2s" }}
             >
               <p className="text-lg">
-                I'm a final-year Computer Science Engineering student with an insatiable curiosity for
+                I'm a third-year Computer Science Engineering student with an insatiable curiosity for
                 <span className="text-white font-normal"> Artificial Intelligence</span> and
                 <span className="text-white font-normal"> Machine Learning</span>.
               </p>
@@ -90,15 +90,15 @@ export default function About() {
             >
               <div className="text-center group">
                 <div className="text-3xl font-light text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  15+
+                  3
                 </div>
                 <div className="text-sm text-gray-400 uppercase tracking-wider">Projects</div>
               </div>
               <div className="text-center group">
                 <div className="text-3xl font-light text-white mb-2 group-hover:scale-110 transition-transform duration-300">
-                  3+
+                  3 yr
                 </div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Collage Student</div>
               </div>
               <div className="text-center group">
                 <div className="text-3xl font-light text-white mb-2 group-hover:scale-110 transition-transform duration-300">

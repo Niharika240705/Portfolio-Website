@@ -96,7 +96,7 @@ export default function Hero() {
               </h2>
               <div className="w-16 h-px bg-gradient-to-r from-purple-500 to-red-500 mx-auto" />
               <h3 className="text-lg text-gray-500 font-light tracking-wider">
-                Computer Science Engineering • Final Year
+                Computer Science Engineering • Third Year
               </h3>
             </div>
           </div>

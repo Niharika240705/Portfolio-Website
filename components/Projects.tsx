@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">Selected Work</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Here are some of my recent projects that showcase my skills in AI/ML, web development, and software
             engineering.
@@ -29,7 +29,7 @@ export default function Projects() {
               <div className="h-48 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700 dark:to-gray-600 rounded-t-lg flex items-center justify-center">
                 {project.image ? (
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover rounded-t-lg"
                   />
