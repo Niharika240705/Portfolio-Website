@@ -2,13 +2,16 @@
 
 import { useState, useEffect } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
-import LoadingScreen from "@/components/LoadingScreen"
-import Hero from "@/components/Hero"
-import About from "@/components/About"
-import Work from "@/components/Work"
-import Contact from "@/components/Contact"
-import Navigation from "@/components/Navigation"
-import ScrollColorChanger from "@/components/ScrollColorChanger"
+import dynamic from "next/dynamic"
+
+// Dynamic imports for client-only components
+const LoadingScreen = dynamic(() => import("@/components/LoadingScreen"), { ssr: false })
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false })
+const About = dynamic(() => import("@/components/About"), { ssr: false })
+const Work = dynamic(() => import("@/components/Work"), { ssr: false })
+const Contact = dynamic(() => import("@/components/Contact"), { ssr: false })
+const Navigation = dynamic(() => import("@/components/Navigation"), { ssr: false })
+const ScrollColorChanger = dynamic(() => import("@/components/ScrollColorChanger"), { ssr: false })
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
