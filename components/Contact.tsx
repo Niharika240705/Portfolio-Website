@@ -17,9 +17,9 @@ export default function Contact() {
   }, [])
 
   const contacts = [
-    { icon: Mail, title: "Email", info: "niharika.singh@example.com", color: "purple" },
+    { icon: Mail, title: "Email", info: "niharika.singh@btech.christuniversity.in", color: "purple" },
     { icon: Github, title: "GitHub", info: "@Niharika240705", color: "pink", url: "https://github.com/Niharika240705" },
-    { icon: Linkedin, title: "LinkedIn", info: "Connect with me", color: "blue", url: "https://linkedin.com/in/niharika-singh" },
+    { icon: Linkedin, title: "LinkedIn", info: "Connect with me", color: "blue", url: "https://linkedin.com/in/niharika-singh-651930290" },
     { icon: Download, title: "Resume", info: "Download CV", color: "orange", url: "https://drive.google.com/file/d/1BXO9PTAKUbukEVGr1ixxlBvZEcsi4g0z/view?usp=share_link" },
   ]
 
@@ -59,7 +59,7 @@ export default function Contact() {
         {/* CTA Button */}
         <div className="text-center mt-12">
           <a
-            href="mailto:niharika.singh@example.com"
+            href="mailto:niharika.singh@btech.christuniversity.in"
             className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-red-500 text-white rounded-lg hover:scale-105 transition-transform duration-300"
           >
             <span>Get In Touch</span>

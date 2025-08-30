@@ -8,12 +8,12 @@ export const socialLinksData = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/niharikasingh240705/",
+    url: "https://www.linkedin.com/in/niharika-singh-651930290/",
     icon: Linkedin,
   },
   {
     name: "Email",
-    url: "mailto:niharikasingh240705@gmail.com",
+    url: "mailto:niharika.singh@btech.christuniversity.in",
     icon: Mail,
   },
   {
